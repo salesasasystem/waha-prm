@@ -2,7 +2,7 @@
 
 Servidor WAHA para o PRM consultar membros reais de grupos do WhatsApp.
 
-Este deploy usa o engine `GOWS`, que evita abrir navegador/Chromium no Render e tende a iniciar melhor em plano gratuito.
+Este deploy usa o engine configurado em `WHATSAPP_DEFAULT_ENGINE`.
 
 ## Variaveis no Render
 
@@ -12,7 +12,7 @@ Configure no painel do Render:
 WAHA_API_KEY=coloque-uma-chave-grande
 WAHA_DASHBOARD_USERNAME=admin
 WAHA_DASHBOARD_PASSWORD=coloque-uma-senha-grande
-WHATSAPP_DEFAULT_ENGINE=GOWS
+WHATSAPP_DEFAULT_ENGINE=WEBJS
 WAHA_API_KEY_EXCLUDE_PATH=ping,health
 WHATSAPP_API_KEY_EXCLUDE_PATH=ping,health
 ```

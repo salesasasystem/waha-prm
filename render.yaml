@@ -2,12 +2,12 @@ services:
   - type: web
     name: waha-prm
     runtime: docker
-    plan: free
+    plan: standard
     autoDeploy: true
     healthCheckPath: /ping
     envVars:
       - key: WHATSAPP_DEFAULT_ENGINE
-        value: GOWS
+        value: WEBJS
       - key: WAHA_API_KEY_EXCLUDE_PATH
         value: ping,health
       - key: WHATSAPP_API_KEY_EXCLUDE_PATH
