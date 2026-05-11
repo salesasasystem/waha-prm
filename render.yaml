@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: waha-prm
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /api/server/version
+    envVars:
+      - key: WAHA_API_KEY
+        sync: false
+      - key: WAHA_DASHBOARD_USERNAME
+        sync: false
+      - key: WAHA_DASHBOARD_PASSWORD
+        sync: false
