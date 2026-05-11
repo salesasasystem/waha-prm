@@ -1,1 +1,1 @@
-FROM devlikeapro/waha-plus:latest
+FROM devlikeapro/waha:latest
