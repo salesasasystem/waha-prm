@@ -4,10 +4,14 @@ services:
     runtime: docker
     plan: free
     autoDeploy: true
-    healthCheckPath: /api/server/version
+    healthCheckPath: /ping
     envVars:
       - key: WHATSAPP_DEFAULT_ENGINE
         value: GOWS
+      - key: WAHA_API_KEY_EXCLUDE_PATH
+        value: ping,health
+      - key: WHATSAPP_API_KEY_EXCLUDE_PATH
+        value: ping,health
       - key: WAHA_API_KEY
         sync: false
       - key: WAHA_DASHBOARD_USERNAME
