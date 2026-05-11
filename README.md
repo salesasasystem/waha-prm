@@ -2,6 +2,8 @@
 
 Servidor WAHA para o PRM consultar membros reais de grupos do WhatsApp.
 
+Este deploy usa o engine `GOWS`, que evita abrir navegador/Chromium no Render e tende a iniciar melhor em plano gratuito.
+
 ## Variaveis no Render
 
 Configure no painel do Render:
@@ -10,6 +12,7 @@ Configure no painel do Render:
 WAHA_API_KEY=coloque-uma-chave-grande
 WAHA_DASHBOARD_USERNAME=admin
 WAHA_DASHBOARD_PASSWORD=coloque-uma-senha-grande
+WHATSAPP_DEFAULT_ENGINE=GOWS
 ```
 
 Depois do deploy, abra:

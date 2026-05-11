@@ -6,6 +6,8 @@ services:
     autoDeploy: true
     healthCheckPath: /api/server/version
     envVars:
+      - key: WHATSAPP_DEFAULT_ENGINE
+        value: GOWS
       - key: WAHA_API_KEY
         sync: false
       - key: WAHA_DASHBOARD_USERNAME
