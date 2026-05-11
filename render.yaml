@@ -7,7 +7,7 @@ services:
     healthCheckPath: /ping
     envVars:
       - key: WHATSAPP_DEFAULT_ENGINE
-        value: WEBJS
+        value: NOWEB
       - key: WAHA_API_KEY_EXCLUDE_PATH
         value: ping,health
       - key: WHATSAPP_API_KEY_EXCLUDE_PATH
